@@ -1,0 +1,405 @@
+body {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+.catalog-items {
+  width: 700px;
+  margin: left; /* для оформления демонстрации */
+  margin-top: 15px;
+  margin-r;
+  font-size: 0;
+}
+.catalog-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 600;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+.new:before {
+  position: absolute;
+  rtop: -1px;
+  right: -1px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  content: '';
+  background: url('https://up.htmlacademy.ru/assets/technomart/img/new-flag.png') no-repeat 0 0;
+}
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: #fff;
+}
+.actions .buy,
+.actions .bookmark {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  display: block;
+  width: 135px;
+  margin: 0 auto 7px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #63a63e;
+}
+.actions .buy {
+  box-shadow: inset 0 -3px 0 #367315;
+}
+.actions .bookmark {
+  width: 129px;
+  padding: 7px 0;
+  color: #63a63e;
+  border: 3px solid #63a63e;
+  background-color: #fff;
+}
+.catalog-item .actions {
+  display: none;
+}
+.catalog-item:hover .actions {
+  display: block;
+}
+.catalog-item-image {
+  width: 218px;
+  height: 168px;
+  overflow: hidden;
+}
+.catalog-item-image img {
+  max-width: 100%;
+}
+.catalog-item .title {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 0 25px;
+}
+.catalog-item .discount {
+  min-height: 20px;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+  color: #999;
+}
+.catalog-item .price {
+  position: relative;
+  width: 80px;
+  margin: 0 auto 0px;
+  padding: 10px 30px;
+  color: #fff;
+  background: #ee3643;
+  border-radius: 3px;
+}
+.catalog-item .price:after {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 20px solid #fff;
+  border-left-color: #ee3643;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#block-body {
+    width: 1035px;
+    margin: 5px auto;
+    height: auto;
+
+}
+
+#block-content {
+    width: 1035px;
+    height: auto;
+    min-height: 500px;
+}
+.logo {
+    width: 200px;
+    float: left;
+    height: 80px;
+}
+.logo a {
+    display: block;
+    margin-left: 15px;
+    margin-top: 10px;
+
+    font-size: 28px;
+    color:  #b2aeb2;
+    text-decoration: none;
+    cursor: pointer;
+}
+.use {
+    color: #aa064b;
+
+}
+.web {
+    color: #429595;
+}
+.logo p {
+    margin-left: 20px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+
+    font-size: 13px;
+    color: white;
+}
+.top-menu {
+    width: 885px;
+    height: 80px;
+    float: left;
+}
+.top-menu ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+.top-menu ul li a {
+    display: flex;
+    width: 171px;
+    text-decoration: none;
+
+    font-size: 17px;
+    color: #000000;
+    height: 55px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.top-menu ul li a:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    background: #00ADE4;
+}
+.block-top-auth {
+    width: 100px;
+    float: left;
+    margin-left: 40px;
+    height: 80px;
+}
+.block-top-auth p {
+    margin-top: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+.block-top-auth a {
+    text-decoration: none;
+    color: white;
+
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.block-top-auth a:hover {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    color: #00ADE4;
+}
+.editContent{
+    background: white;
+}
+
+
+
+
+.article_text{
+    background: #eaeaea;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 10px;
+
+    display: block;
+}
+.article_name{
+
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    position: center;
+    display: block;
+    background: #c8c8c8;
+}
+
+.menu_bar{
+    margin-right: 20px;
+
+    background: #151515;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.headDIV{
+    position:relative;
+ height: 450px;
+}
+
+.menuTOP{
+    position:absolute;
+
+    width:200px;
+}
+
+.contents{
+    position:absolute;
+    margin-left: 40px;
+    margin-top: 10px;
+
+    width:1400px;
+}
+
+.task{
+    position: ;
+    margin-left: 40px;
+    margin-top: 10px;
+    width:1400px;
+    outline: 2px solid #000;
+    }
+
+.row_article{
+
+    background: #000;
+}
+.row{
+    background: #000;
+    position: flex;
+
+
+
+}
+.container{
+
+    background: #FFFFE0;
+
+}
+.col-md-12{
+
+    outline: 1px solid #000;
+}
+
+
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.headDIV{
+    position:relative;
+ height: 450px;
+}
+
+.menuTOP{
+    position:absolute;
+    width:200px;
+}
+
+.home_text{
+    position: absolute; /* or absolute */
+    top: 0%;
+    left: 100%;
+    width: 900px;
+    height: 800px;
+}
+.home_text p{
+     background: #eaeaea;
+}
+.col-md-12{
+    background: white;
+}
+.publication{
+    background: #e3dada;
+    position: relative; /* or absolute */
+    top: 50%;
+    left: 90%;
+    width: 200px;
+    height:100px;
+    margin: -50px 0 0 -100px;
+}
+.trinker{
+     position: relative;
+}
+
+.form_com{
+    width: 100%;
+}
+
+
+header {
+
+   height: 80px;
+   background-color: #D3D3D3;
+}
+
