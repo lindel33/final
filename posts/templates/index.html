@@ -40,22 +40,20 @@
 
 <h3>Статьи</h3>
 
-    <div class="menuTOP">
-        {% for post in posts %}
-            <div class="vertical-menu">
-                <a href="{% url 'post' post_slug=post.slug %}" >
-                    <button class="btn ">{{ post.title }}</button>
-                </a>
-            </div>
-        {% endfor %}
-        <div class="home_text">
-            <br>
-            <p> Это сайт на Django 3</p>
-            <p> А это заглушка </p>
-            <img src="media/home.jpg" alt="Заглушка">
-
+<div class="menuTOP">
+    {% for post in posts %}
+        <div class="vertical-menu">
+            <a href="{% url 'post' post_slug=post.slug %}" >
+                <button class="btn ">{{ post.title }}</button>
+            </a>
         </div>
+    {% endfor %}
+    <div class="home_text">
+        <br>
+        <p> Это заглушка сайта на Django 3</p>
+        <img src="media/home.jpg" alt="Заглушка">
     </div>
+</div>
 
 {% endblock content %}
 
