@@ -8,38 +8,28 @@
 </head>
 
 <body>
-
 <header class="header">
     <div class="logo">
     <a href="{% url 'posts' %}">
         <span class="use">Тест</span> -<span class="web"> Сайт</span>
     </a>
-    <p>Алгоритмы на Python</p>
+    <p>Сайт на Python/Django</p>
 </div>
-
 <div class="top-menu">
     <ul>
         <li><a href="{% url 'posts' %}">Статьи</a></li>
         <li><a href="">Кнопка о нас</a></li>
-
-
         {% if user.is_authenticated %}
         <li><p class="login"><a href="{% url 'logout' %}">Выход</a></p></li>
             {% else %}
             <li class="login"><a href="{% url 'login' %}">Войти</a></li>
             <li class="login"><a href="{% url 'registr' %}">Регистрация</a></li>
         {% endif %}
-
-
     </ul>
-
 </div>
-
 </header>
 {% block content %}
-
 <h3>Статьи</h3>
-
 <div class="menuTOP">
     {% for post in posts %}
         <div class="vertical-menu">
@@ -54,10 +44,6 @@
         <img src="media/home.jpg" alt="Заглушка">
     </div>
 </div>
-
 {% endblock content %}
-
-
 </body>
-
 </html>
