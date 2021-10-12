@@ -17,26 +17,22 @@
     <hr>
     <p><strong>Комментарии</strong>: <span class="badge rounded-pill bg-dark">{{ post.comments.count }}</span></p>
     <br>
-
         {% for comment in post.comments.all %}
             <div class="col-md-12 mt-3 mb-3">
                 <p><strong>{{ comment.author.username }}</strong> | <small>опубликовано:{{ comment.created_at|date:"Y-m-d" }}</small></p>
                 <p>{{ comment.text }}</p>
             </div>
         {% endfor %}
-
     {% if request.user.is_authenticated %}
-
-    <form action="{% url 'comments:comment-create' content_type='post' object_id=post.id %}" method="POST" class="form_com">
+    <form action="{% url 'comments:comment-create' content_type='post' object_id=post.id %}"
+          method="POST" class="form_com">
         {% csrf_token %}
         {{ form|crispy }}
         <br>
         <input class="btn btn-primary" type="submit" value="Отправить">
     </form>
-
     {% else %}
         <p class="text-center">Оставлять комментарии могут только авторизованные пользователи</p>
     {% endif %}
 </div>
-
 {% endblock content %}
