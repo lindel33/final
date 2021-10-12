@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 from django.views.generic import ListView, DetailView
+from django.shortcuts import render
 
 from .models import Post
 
-from comments.forms import CommentForm
-
-from django.shortcuts import render
 from .forms import RegistrForm
+from comments.forms import CommentForm
 
 
 class PostListView(ListView):
